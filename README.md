@@ -1,6 +1,7 @@
 ### This repo has the following artifacts
 - multiple_linear_regression.ipynb
 - final_model_for_submission.ipynb
+- production_deployment.ipynb
 - models/DecisionTreeRegressor_GridSearchCV.sav
 - models/DecisionTreeRegressor_RandomizedSearchCV.sav
 
@@ -16,7 +17,7 @@ This allowed me to understand following
  - Data visualisations using libraries such as matplotlib and seaborn
  - Correlations to understand the relation between the data features
  
-### final_model_for_submission.ipynb###
+### final_model_for_submission.ipynb
 **This is the artifact for the submission.**
 
 This notebook conatins the following
@@ -39,6 +40,14 @@ This notebook conatins the following
  Analysis showed that the following two models generated using ML hyper parameters techniques gave similar results, hence submmiting both the models.
  - GridsearchCV
  - RandomizedSearchCV
+
+### production_deployment.ipynb
+**This is the artifact demonstrating deployment steps.**
+
+Serialised model from the previous step needs to be deserialised using pickle library on production servers.
+
+It is a prerequisite for the runtime environment to contain pickle library, use the below command to install it.
+> !pip install pickle
 
 
 ### models/DecisionTreeRegressor_GridSearchCV.sav
